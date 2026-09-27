@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'rest_framework_swagger',
     'drf_yasg',
+    'corsheaders',
 
 ]
 
@@ -71,6 +72,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     "allauth.account.middleware.AccountMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
 
 ]
 
